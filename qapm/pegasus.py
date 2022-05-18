@@ -6,7 +6,7 @@ This module contain various Pegasus implementations.
 
 import abstract
 
-class HFPegasus(abstract.Pegasus):
+class HFPegasus(abstract.Paraphrase):
 
     """
     HFPegasus
