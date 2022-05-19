@@ -10,7 +10,7 @@ import qapm
 texts = ["The ultimate test of your knowledge is your capacity to convey it to another."]
 pegasus = qapm.HFPegasus()
 
-@pytest.mark.parametrize("pegasus, texts", [(pegasus, texts)])
+@pytest.mark.parametrize("pegasus_, texts_", [(pegasus, texts)])
 def test_hfpegasus(pegasus_, texts_):
 
     """
