@@ -7,10 +7,11 @@ This module contains the test for HFPegasus.
 import pytest
 import qapm
 
-texts = ["dummy_text"]
+texts = ["The ultimate test of your knowledge is your capacity to convey it to another."]
+pegasus = qapm.HFPegasus()
 
-@pytest.mark.parametrize("texts", texts)
-def test_hfpegasus(texts):
+@pytest.mark.parametrize("pegasus, texts", [texts, pegasus])
+def test_hfpegasus(pegasus_, texts_):
 
     """
     test_hfpegasus
@@ -19,7 +20,7 @@ def test_hfpegasus(texts):
     pegasus model.
     """
 
-    pegasus = qapm.HFPegasus()
-    results = pegasus.run(["dummy text"])
+    results = pegasus_.run(texts_)
 
-    assert len(results) == len(texts)
+    assert len(results) == len(texts_)
+    assert results != texts_
