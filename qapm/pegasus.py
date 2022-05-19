@@ -48,5 +48,5 @@ class HFPegasus(abstract.Paraphrase):
         Returns
         """
 
-        infer_ = functools.partial(infer, num_return_sequences=10, num_beams=10)
+        infer_ = functools.partial(self.infer, num_return_sequences=10, num_beams=10)
         return list(map(infer, texts))
