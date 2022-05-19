@@ -4,10 +4,6 @@ pegasus
 This module contain various Pegasus implementations.
 """
 
-import abstract
-import torch
-import transformers
-
 class HFPegasus(abstract.Paraphrase):
 
     """
