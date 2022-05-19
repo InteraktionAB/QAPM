@@ -14,7 +14,7 @@ class HFPegasus(abstract.Paraphrase):
     Implementation of Pegasus.
     """
 
-    def run(texts: list,):
+    def run(self, texts: list,):
 
         """
         run
